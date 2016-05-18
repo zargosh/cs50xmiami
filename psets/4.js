@@ -11,3 +11,17 @@ http://www.mathsisfun.com/temperature-conversion.html
 */
 
 // write your solution here...
+
+function round(value, decimals) {
+    return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
+}
+var celsiusTemp = 34;
+
+var convertToFaren = round((celsiusTemp * 9) / 5 + 32, 2);
+
+var farenheitTemp = 76;
+
+var convertToCel = round((farenheitTemp - 32) * 5 / 9, 2);
+
+console.log(+celsiusTemp+ "°C is " +convertToFaren+"°F.");
+console.log(+farenheitTemp+ "°F is " +convertToCel+"°C.");
