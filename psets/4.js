@@ -19,7 +19,7 @@ var celsiusTemp = 34;
 
 var convertToFaren = round((celsiusTemp * 9) / 5 + 32, 2);
 
-var farenheitTemp = 76;
+var farenheitTemp = 75;
 
 var convertToCel = round((farenheitTemp - 32) * 5 / 9, 2);
 
