@@ -17,7 +17,7 @@ function drEvil(amount) {
 
 var total = drEvil(10);
 
-var totalA = drEvil(1000000);
+var totalMill = drEvil(1000000);
 
 console.log(total);
-console.log(totalA);
+console.log(totalMill);
