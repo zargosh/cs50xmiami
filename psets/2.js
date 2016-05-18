@@ -12,3 +12,19 @@ Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no mo
 */
 
 // write your solution here...
+var currentAge = 47;
+
+var maxAge = 98;
+
+var amountPerDay = 7;
+
+var leapYearCalc = Math.floor(maxAge - currentAge) / 4;
+
+var amountLeap = leapYearCalc * amountPerDay;
+
+var amountRegularYear = Math.floor((maxAge - currentAge) * (amountPerDay * 365));
+
+var totalAmount = Math.floor(amountLeap + amountRegularYear);
+
+
+console.log("You will need " +totalAmount+ " to last you until the ripe old age of " +maxAge+ ".");
