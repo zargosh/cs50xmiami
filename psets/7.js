@@ -13,8 +13,8 @@ fixStart('babble'): 'ba**le'
 
 function fixStart(s) {
     var firstChar = s.charAt(0);
-    var restOfWord = s.substr(1);
-    return firstChar.concat(restOfWord.replace(RegExp(firstChar, "gi"), "*"));
+    var remainderWord = s.substr(1);
+    return firstChar.concat(remainderWord.replace(RegExp(firstChar, "gi"), "*"));
 
 }
 
