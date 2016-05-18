@@ -16,5 +16,17 @@ For example:
 */
 
 function notBad(sentence) {
-  // write your solution here...
+  var newSentence = sentence.replace("not", "good");
+  return newSentence;
+
 }
+
+var sentence = notBad("This dinner is not that bad!");
+
+var sentence1 = notBad("This movie is not so bad!");
+
+var sentence2 = notBad("This dinner is bad!");
+
+console.log(sentence);
+console.log(sentence1);
+console.log(sentence2);
