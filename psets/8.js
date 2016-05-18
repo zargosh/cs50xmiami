@@ -33,15 +33,16 @@ function verbing(word) {
 
       I want to check if the word is one syllable with the following pattern:
       <consonant-vowel-consonant> and then double the last letter if it is.
-      It seems like it needs a RegExp statement like the following, but I can't
-      get it to function properly   [a-z&&[^aeiou]][aeiou][a-z&&[^aeiou]]";
+      It seems like it needs a RegExp statement that pattern matches the following,
+      but I can't get it to function properly
+        [a-z&&[^aeiou]][aeiou][a-z&&[^aeiou]]";
         return word.concat(word.charAt(word.length-1).concat("ing")); */
       else
         return word.concat("ing");  }
     else return word;
 }
 
-var word = verbing("foc");
+var word = verbing("fox");
 var wordA = verbing("swimming");
 var wordB = verbing("go");
 
