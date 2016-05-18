@@ -20,9 +20,9 @@ function mixUp(a, b) {
     return first2.concat(last1).concat(" ").concat(first1).concat(last2);
 }
 
-var word = "dog";
+var word = "johann";
 
-var word2 = "dinner";
+var word2 = "bach";
 
 var newSentence = mixUp(word, word2);
 
