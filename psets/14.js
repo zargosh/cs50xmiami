@@ -14,3 +14,20 @@ Create a function called fahrenheitToCelsius:
 */
 
 // write your solution here...
+
+function celsiusToFahrenheit(celsiusTemp) {
+    var convertToFaren = round((celsiusTemp * 9) / 5 + 32, 2);
+    return console.log(+celsiusTemp+ "°C is " +convertToFaren+"°F.");
+}
+
+function fahrenheitToCelsius(farenheitTemp) {
+    var convertToCel = round((farenheitTemp - 32) * 5 / 9, 2);
+    return console.log(+farenheitTemp+ "°F is " +convertToCel+"°C.");
+}
+
+function round(value, decimals) {
+    return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
+}
+
+celsiusToFahrenheit(34);
+fahrenheitToCelsius(75);
