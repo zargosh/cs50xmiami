@@ -12,3 +12,25 @@ Write a function named calculateSupply that:
 */
 
 // write your solution here...
+
+function calculateSupply(currentAge, amountPerDay) {
+
+    var maxAge = 98;
+
+    var leapYearCalc = Math.floor(maxAge - currentAge) / 4;
+
+    var amountLeap = leapYearCalc * amountPerDay;
+
+    var amountRegularYear = Math.floor((maxAge - currentAge) * (amountPerDay * 365));
+
+    var totalAmount = Math.floor(amountLeap + amountRegularYear);
+
+    console.log("You will need " +totalAmount+ " to last you until the ripe old age of " +maxAge+ ".");
+
+    return;
+
+}
+
+var case1 = calculateSupply(47, 7);
+var case2 = calculateSupply(12, 2);
+var case3 = calculateSupply(26, 47);
