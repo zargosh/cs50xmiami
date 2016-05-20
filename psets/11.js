@@ -12,3 +12,16 @@ Write a function named calculateAge that:
 */
 
 // write your solution here...
+function calculateAge(birthYear, currentYear) {
+
+  var age1 = (currentYear - birthYear);
+
+  var age2 = (currentYear - birthYear) - 1;
+
+  console.log("You are either " + age2+ " or " + age1+ ".");
+
+  return;
+}
+var case1 = calculateAge(1969, 2016);
+var case2 = calculateAge(1925, 2016);
+var case3 = calculateAge(1999, 2016);
