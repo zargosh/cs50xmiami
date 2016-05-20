@@ -16,8 +16,13 @@ For example:
 */
 
 function notBad(sentence) {
-  var newSentence = sentence.replace("not", "good");
-  return newSentence;
+
+  if (sentence.match(/not.*bad/)) {
+
+  var newSentence = sentence.replace(/not.*bad/, "good");
+    return newSentence; }
+
+  else return sentence;
 
 }
 
