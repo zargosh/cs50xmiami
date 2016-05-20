@@ -11,13 +11,7 @@ Write a function named tellFortune that:
 
 // write your solution here...
 function tellFortune(numChildren, partnerName, geoLocal, jobTitle) {
-
-  var sentence = "You will be a "+ jobTitle+ " in " + geoLocal + ", and married to " + partnerName + " with " + numChildren+ " kids.";
-
-  console.log(sentence);
-
-  return;
-
+    return console.log("You will be a "+ jobTitle+ " in " + geoLocal + ", and married to " + partnerName + " with " + numChildren+ " kids.");
 }
 
 var test = tellFortune(4, "Tracy", "Paris", "Hotdog Vendor");
