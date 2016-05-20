@@ -34,10 +34,7 @@ function verbing(word) {
       if (word.endsWith("e"))
         return word.substr(0, word.length-1).concat("ing");
 
-      else if (word.endsWith("x"))
-          return word.concat("ing");
-
-      else if (word.endsWith("w"))
+      else if (word.endsWith("x") || word.endsWith("w"))
           return word.concat("ing");
 
       else
@@ -46,10 +43,15 @@ function verbing(word) {
     else return word;
 }
 
-var word = verbing("dog");
-var wordA = verbing("pray");
+var word = verbing("fax");
+var wordA = verbing("saw");
 var wordB = verbing("go");
+var wordC = verbing("pray");
+var wordD = verbing("dog");
+
 
 console.log(word);
 console.log(wordA);
 console.log(wordB);
+console.log(wordC);
+console.log(wordD);
