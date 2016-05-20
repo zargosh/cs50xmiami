@@ -10,3 +10,16 @@ and log the output to make sure it works (e.g. "The greater number of 5 and 10 i
 */
 
 // write your solution here...
+function greaterNum(x, y) {
+  if (x > y)
+    return x;
+  else if (x == y)
+    return console.log ("These two numbers are the same.");
+  else return y;
+}
+
+var case1 = greaterNum(12, 25);
+var case2 = greaterNum(48, 3);
+
+console.log("The greater of these two numbers is " +case1);
+console.log("The greater of these two numbers is " +case2);
