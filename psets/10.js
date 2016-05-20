@@ -21,5 +21,5 @@ function tellFortune(numChildren, partnerName, geoLocal, jobTitle) {
 }
 
 var test = tellFortune(4, "Tracy", "Paris", "Hotdog Vendor");
-var test = tellFortune(2, "Doug", "Utica", "Squirrel Inhibitor");
-var test = tellFortune(7, "Monica", "Two Egg", "Feng Shui Master");
+var test2 = tellFortune(2, "Doug", "Utica", "Squirrel Inhibitor");
+var test3 = tellFortune(7, "Monica", "Two Egg", "Feng Shui Master");
