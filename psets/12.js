@@ -25,12 +25,10 @@ function calculateSupply(currentAge, amountPerDay) {
 
     var totalAmount = Math.floor(amountLeap + amountRegularYear);
 
-    console.log("You will need " +totalAmount+ " to last you until the ripe old age of " +maxAge+ ".");
-
-    return;
+    return console.log("You will need " +totalAmount+ " to last you until the ripe old age of " +maxAge+ ".");
 
 }
 
-var case1 = calculateSupply(47, 7);
-var case2 = calculateSupply(12, 2);
-var case3 = calculateSupply(26, 47);
+calculateSupply(47, 7);
+calculateSupply(12, 2);
+calculateSupply(26, 47);
