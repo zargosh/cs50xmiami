@@ -9,3 +9,17 @@ Create an array to hold your top choices (colors, presidents, whatever).
 */
 
 // write your solution here...
+
+var choices = ["blue", "ochre", "magenta"];
+
+for (var i = 0; i < 3; i++)
+  console.log("My #" +(i+1) + " choice is " +choices[i] +".");
+  console.log("\n");
+
+for (var i = 0; i < 3; i++) {
+if (i == 0)
+  console.log ("My " +(i+1) + "st choice is " +choices[i] +".");
+else if (i == 1)
+  console.log ("My " +(i+1) + "nd choice is " +choices[i] +".");
+else if (i == 2)
+  console.log ("My " +(i+1) + "rd choice is " +choices[i] +".");  }
