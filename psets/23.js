@@ -11,3 +11,13 @@ It's like IMDB, but much much smaller!
 */
 
 // write your solution here...
+function movieInfo(title, duration, stars) {
+  console.log(movie.title+ " lasts for " +movie.duration + " minutes. Stars: ");
+
+for (var i = 0; i < movie.stars.length; i++)
+  console.log(movie.stars[i]);
+}
+
+var movie = {title: "Puff the Magic Dragon", duration: "30", stars: ["Puff", "Jackie", "Living Sneezes"]};
+
+movieInfo(movie);
