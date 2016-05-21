@@ -17,3 +17,19 @@ Keep track of which books you read and which books you want to read!
 */
 
 // write your solution here...
+var book = {
+  title: ["De Rerum Natura", "American Pastoral", "Seven Brief Lessons on Physics"],
+  author: ["Lucretius", "Philip Roth", "Carlo Rovelli"],
+  alreadyRead: ["F", "T", "T"] };
+
+
+for (var i = 0; i < 3; i++)
+  console.log(book.title[i]+ " by " +book.author[i] +".");
+  console.log("\n");
+
+for (var i = 0; i < 3; i++) {
+  if (book.alreadyRead[i] == "F")
+    console.log("You still need to read " +book.title[i]+ " by " +book.author[i] +".");
+  else
+    console.log("You've already read " +book.title[i]+ " by " +book.author[i] +".");
+  }
