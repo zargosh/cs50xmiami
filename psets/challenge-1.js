@@ -1,4 +1,4 @@
-/*
+ /*
 The Word Guesser
 
 You'll create a simple word guessing game where the user gets infinite tries to
@@ -35,3 +35,88 @@ like Wheel of Fortune without the wheel and fortune).
 */
 
 // write your solution here...
+
+function guessLetter(letter) {
+
+  for (var j = 0; j < current.length; j++) {
+    if (letter === current[j]) {
+      console.log("   You've already picked that letter.")
+      console.log("   Letters you've picked that are in the word: " +current.toString());
+      console.log("   Letters left to choose from: " +alphabet.toString());
+      return; } }
+
+  for (var k = 0; k < picked.length; k++) {
+    if (letter === picked[k]) {
+      console.log("   You've already picked that letter.")
+      console.log("   Letters in word that you've already picked: " +current.toString());
+      console.log("   Letters left to choose from: " +alphabet.toString());
+      return; } }
+
+      if (counter === 4)
+        console.log("  -- Only one more guess! --");
+
+for (var i = 0; i < word.length; i++) {
+    if (letter === word[i]) {
+      current.splice(0, 0, letter);
+      counter++;
+
+      if(word.sort().join(',')=== current.sort().join(',')){
+          var wordStr = word.join("");
+          clearInterval(win);
+          return console.log('You win! The word was ' +wordStr +".");
+          }
+
+
+    var index = alphabet.indexOf(letter);
+
+      if (index > -1)
+        alphabet.splice(index, 1);
+        return console.log("Congrats! You've found a letter."); } }
+
+
+
+  var index = alphabet.indexOf(letter);
+    picked.splice(0, 0, letter);
+
+    if (counter === 5) {
+        var wordStr = word.join("");
+        clearInterval(win);
+        return console.log("Sorry, you lose. The word was " +wordStr +"."); }
+
+    counter++;
+
+    if (index > -1)
+      alphabet.splice(index, 1);
+        return console.log("Sorry, that's not a match.");
+
+}
+
+
+function ask(x) {
+
+    const readline = require('readline');
+
+    const rl = readline.createInterface({
+      input: process.stdin,
+      output: process.stdout
+    });
+
+    rl.question('Please pick a letter. ', (answer) => {
+        guessLetter(answer);
+
+    rl.close();
+    }); }
+
+
+
+
+    var word = ["f", "o", "x"];
+    var current = [];
+    var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n",
+                    "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+    var picked = [];
+
+    console.log("This is a game of hangman. You can choose up to 6 letters. Please wait...");
+    var win = setInterval(ask, 3000);
+
+    var counter = 0;
